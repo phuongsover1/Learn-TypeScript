@@ -21,3 +21,10 @@ let foo: undefined = undefined;
 let number = 343;
 number = 'dsf'; // cannot assign type 'string' to type 'number'
 number = true; // cannot assign type 'boolean' to 'number'
+
+// the any type => turn off ts complain.
+let thing: any = 'hello';
+thing = 1;
+thing = false;
+thing();
+thing.toUpperCase();
