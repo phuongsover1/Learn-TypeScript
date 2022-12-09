@@ -23,13 +23,17 @@
 //   return 1;
 // }
 // Return TypeAnnotations
-function square(num) {
-    return num * num;
-}
-function rando(num) {
-    if (Math.random() < 0.5)
-        return num.toString();
-    return num;
-}
-console.log(rando(1));
-console.log(rando(3));
+// function square(num: number): number {
+//   return num * num;
+// }
+// function rando(num: number): string | number {
+//   if (Math.random() < 0.5) return num.toString();
+//   return num;
+// }
+// console.log(rando(1));
+// console.log(rando(3));
+// Anonymous Function Contextual Typing
+const colors = ['red', 'orange', 'yellow'];
+colors.map((color) => {
+    return color.toUpperCase();
+});
