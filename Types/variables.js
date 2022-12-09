@@ -1,0 +1,15 @@
+"use strict";
+let movieTitle = 'Amadeus';
+movieTitle = 'Arrival';
+// movieTitle = 9;
+movieTitle.toUpperCase();
+let numCatLives = 9;
+numCatLives += 1;
+// numCatLives = 'zero';
+let gameOver = false;
+gameOver = true;
+// gameOver = 'true';
+null;
+undefined;
+let nothing = null;
+let foo = undefined;
