@@ -8,3 +8,11 @@ function greet(person: string): string {
 
 square(3);
 greet('Phuong');
+
+const doSomething = (
+  person: string,
+  age: number,
+  isFunny: boolean
+): void => {};
+
+doSomething('Phuong', 21, true);

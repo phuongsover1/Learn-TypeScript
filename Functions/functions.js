@@ -7,3 +7,5 @@ function greet(person) {
 }
 square(3);
 greet('Phuong');
+const doSomething = (person, age, isFunny) => { };
+doSomething('Phuong', 21, true);
