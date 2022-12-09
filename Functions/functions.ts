@@ -50,8 +50,21 @@
 
 // Void
 // a function that doesn't return anything
-const annoyUser = (num: number): void => {
-  for (let i = 0; i < num; i++) alert('HIIIIII!');
+// const annoyUser = (num: number): void => {
+//   for (let i = 0; i < num; i++) alert('HIIIIII!');
+// };
+
+// Never
+// a function that doesn't finish running
+const neverStop = (): never => {
+  while (true) console.log("I'm still going!");
 };
 
-
+// A function that throws an exception
+const giveError = (
+  msg: string // return 'never' type
+) => {
+  throw new Error(msg);
+  // return undefined;
+  // return null;
+};
