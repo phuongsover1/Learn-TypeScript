@@ -43,7 +43,15 @@
 // console.log(rando(3));
 
 // Anonymous Function Contextual Typing
-const colors = ['red', 'orange', 'yellow'];
-colors.map((color) => {
-  return color.toUpperCase();
-});
+// const colors = ['red', 'orange', 'yellow'];
+// colors.map((color) => {
+//   return color.toUpperCase();
+// });
+
+// Void
+// a function that doesn't return anything
+const annoyUser = (num: number): void => {
+  for (let i = 0; i < num; i++) alert('HIIIIII!');
+};
+
+
