@@ -16,3 +16,8 @@ undefined;
 
 let nothing: null = null;
 let foo: undefined = undefined;
+
+// Type Inference
+let number = 343;
+number = 'dsf'; // cannot assign type 'string' to type 'number'
+number = true; // cannot assign type 'boolean' to 'number'
