@@ -1,11 +1,21 @@
 "use strict";
-function square(num) {
-    return num * num;
-}
-function greet(person) {
+// function square(num: number): number {
+//   return num * num;
+// }
+// function greet(person: string): string {
+//   return `Hi there, ${person}`;
+// }
+// square(3);
+// greet('Phuong');
+// const doSomething = (
+//   person: string,
+//   age: number,
+//   isFunny: boolean
+// ): void => {};
+// doSomething('Phuong', 21, true);
+// Working with default parameters
+const greet = (person = 'stranger') => {
     return `Hi there, ${person}`;
-}
-square(3);
-greet('Phuong');
-const doSomething = (person, age, isFunny) => { };
-doSomething('Phuong', 21, true);
+};
+console.log(greet());
+console.log(greet('Phuong'));
