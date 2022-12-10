@@ -24,3 +24,25 @@ function calculateTax(price: number | string, tax: number): number {
 
 console.log(calculateTax(23, 0.2));
 console.log(calculateTax('$23', 0.2));
+
+// Union types and arrays
+let stuff: number | string[] = 2;
+stuff = ['sefsdf', 'fdf'];
+// stuff = [2, 3]; // error
+
+let numberAndStrArray: (number | string)[];
+numberAndStrArray = [2, 3, 'dfdf'];
+numberAndStrArray = ['2', 'fjdkf', 2, 3];
+
+// numberOrStrArray = 2; // error
+// numberOrStrArray = 'fdfj'; // error
+
+let numberOrStrArray: number[] | string[];
+
+numberOrStrArray = [1, 2, 34];
+numberOrStrArray = ['sf', 'fdf'];
+// numberOrStrArray = [1, '2323']; // error
+
+const locations: (UnionPoint | UnionLocation)[] = [];
+locations.push({ lat: 3, long: 2 });
+locations.push({ x: 5, y: 6 });
