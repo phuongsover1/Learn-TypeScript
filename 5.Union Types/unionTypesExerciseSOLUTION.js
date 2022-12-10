@@ -24,5 +24,6 @@ const greet = (name) => {
     else
         name.forEach((name) => console.log(`Hello, ${name}`));
 };
+console.log();
 greet('Phuong');
 greet(['Phuong', 'Long', 'Luu']);
