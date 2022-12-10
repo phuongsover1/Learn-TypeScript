@@ -50,3 +50,39 @@ Nick.sayHi();
 Phuong.sayHi();
 temp.name;
 temp.say();
+
+// Interface method parameters
+interface ProductInterface {
+  name: string;
+  price: number;
+  applyDiscount(discount: number): number;
+}
+
+type ProductType = {
+  name: string;
+  price: number;
+  applyDiscount(discount: number): number;
+};
+
+const shoes: ProductInterface = {
+  name: 'Blue Suede Shoes',
+  price: 100,
+  applyDiscount(amount: number) {
+    const newPrice = this.price * (1 - amount);
+    this.price = newPrice;
+    return this.price;
+  },
+};
+
+const shoesType: ProductType = {
+  name: 'Blue Suede Shoes',
+  price: 100,
+  applyDiscount(amount: number) {
+    const newPrice = this.price * (1 - amount);
+    this.price = newPrice;
+    return this.price;
+  },
+};
+
+console.log(shoes.applyDiscount(0.1));
+console.log(shoesType.applyDiscount(0.2));

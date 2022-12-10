@@ -28,3 +28,23 @@ Nick.sayHi();
 Phuong.sayHi();
 temp.name;
 temp.say();
+const shoes = {
+    name: 'Blue Suede Shoes',
+    price: 100,
+    applyDiscount(amount) {
+        const newPrice = this.price * (1 - amount);
+        this.price = newPrice;
+        return this.price;
+    },
+};
+const shoesType = {
+    name: 'Blue Suede Shoes',
+    price: 100,
+    applyDiscount(amount) {
+        const newPrice = this.price * (1 - amount);
+        this.price = newPrice;
+        return this.price;
+    },
+};
+console.log(shoes.applyDiscount(0.1));
+console.log(shoesType.applyDiscount(0.2));
