@@ -56,3 +56,12 @@ const elton = {
         return 'Woff Woff!';
     },
 };
+const chewy = {
+    name: 'chewy',
+    age: 2,
+    breed: 'Husky',
+    bark() {
+        return 'Woff Woff woff!';
+    },
+    job: 'guide dog',
+};
