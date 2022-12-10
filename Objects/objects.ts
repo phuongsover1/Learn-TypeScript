@@ -50,33 +50,42 @@
 // type MyNum = number;
 // let a: MyNum = 2;
 
-type Song = {
-  title: string;
-  artist: string;
-  numStreams: number;
-  credits: {
-    producer: string;
-    writer: string;
-  };
+// type Song = {
+//   title: string;
+//   artist: string;
+//   numStreams: number;
+//   credits: {
+//     producer: string;
+//     writer: string;
+//   };
+// };
+
+// function calculatePayout(song: Song): number {
+//   return song.numStreams * 0.33;
+// }
+
+// function printSong(song: Song): void {
+//   console.log(`${song.title} - ${song.artist}`);
+// }
+
+// const mySong: Song = {
+//   title: 'UnchainedMelogy',
+//   artist: 'Righteous Brothers',
+//   numStreams: 12873321,
+//   credits: {
+//     producer: 'PhilSpector',
+//     writer: 'Alex North',
+//   },
+// };
+
+// console.log(`calculatePayout: ${calculatePayout(mySong)}`);
+// printSong(mySong);
+
+// Optional Properties
+type Point = {
+  x: number;
+  y: number;
+  z?: number;
 };
 
-function calculatePayout(song: Song): number {
-  return song.numStreams * 0.33;
-}
-
-function printSong(song: Song): void {
-  console.log(`${song.title} - ${song.artist}`);
-}
-
-const mySong: Song = {
-  title: 'UnchainedMelogy',
-  artist: 'Righteous Brothers',
-  numStreams: 12873321,
-  credits: {
-    producer: 'PhilSpector',
-    writer: 'Alex North',
-  },
-};
-
-console.log(`calculatePayout: ${calculatePayout(mySong)}`);
-printSong(mySong);
+const myPoint: Point = { x: 1, y: 2 };
