@@ -82,10 +82,28 @@
 // printSong(mySong);
 
 // Optional Properties
-type Point = {
-  x: number;
-  y: number;
-  z?: number;
+// type Point = {
+//   x: number;
+//   y: number;
+//   z?: number;
+// };
+
+// const myPoint: Point = { x: 1, y: 2 };
+
+// readonly keyword (only in TS)
+type User = {
+  readonly id: number;
+  username: string;
+  readonly friends: string[];
+};
+const user: User = {
+  id: 124,
+  username: 'catgirl',
+  friends: ['phuong', 'khang', 'luu'],
 };
 
-const myPoint: Point = { x: 1, y: 2 };
+console.log(`user.id: ${user.id}`);
+// user.id = 3; // error
+// user.friends = []; // error
+user.friends.push('Phuong');
+console.log(`user.friends: ${user.friends}`);

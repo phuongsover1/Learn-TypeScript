@@ -9,4 +9,13 @@
 //   age: 22,
 //   isAlive: true,
 // };
-const myPoint = { x: 1, y: 2 };
+const user = {
+    id: 124,
+    username: 'catgirl',
+    friends: ['phuong', 'khang', 'luu'],
+};
+console.log(`user.id: ${user.id}`);
+// user.id = 3;
+// user.friends = [];
+user.friends.push('Phuong');
+console.log(`user.friends: ${user.friends}`);
