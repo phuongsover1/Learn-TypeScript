@@ -1,5 +1,5 @@
 // Introducing to Enums
-enum OrderStatus {
+const enum OrderStatus {
   PENDING,
   SHIPPED,
   DELIVERED,
