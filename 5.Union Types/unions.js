@@ -28,3 +28,11 @@ numberOrStrArray = ['sf', 'fdf'];
 const locations = [];
 locations.push({ lat: 3, long: 2 });
 locations.push({ x: 5, y: 6 });
+// Literal types
+let zero = 0;
+let hi = 'hi';
+// zero = 1; // error
+// hi = 'HI'; // error
+let mood = 'happy';
+mood = 'sad';
+let day = 'Sunday';
