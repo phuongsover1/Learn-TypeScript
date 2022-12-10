@@ -9,13 +9,12 @@
 //   age: 22,
 //   isAlive: true,
 // };
-const user = {
-    id: 124,
-    username: 'catgirl',
-    friends: ['phuong', 'khang', 'luu'],
+const happyFace = {
+    radius: 4,
+    color: 'yellow',
 };
-console.log(`user.id: ${user.id}`);
-// user.id = 3;
-// user.friends = [];
-user.friends.push('Phuong');
-console.log(`user.friends: ${user.friends}`);
+const catDogType = {
+    numLives: 3,
+    breed: 'fox',
+    age: 3,
+};

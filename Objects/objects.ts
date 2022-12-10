@@ -91,19 +91,50 @@
 // const myPoint: Point = { x: 1, y: 2 };
 
 // readonly keyword (only in TS)
-type User = {
-  readonly id: number;
-  username: string;
-  readonly friends: string[];
-};
-const user: User = {
-  id: 124,
-  username: 'catgirl',
-  friends: ['phuong', 'khang', 'luu'],
+// type User = {
+//   readonly id: number;
+//   username: string;
+//   readonly friends: string[];
+// };
+// const user: User = {
+//   id: 124,
+//   username: 'catgirl',
+//   friends: ['phuong', 'khang', 'luu'],
+// };
+
+// console.log(`user.id: ${user.id}`);
+// // user.id = 3; // error
+// // user.friends = []; // error
+// user.friends.push('Phuong');
+// console.log(`user.friends: ${user.friends}`);
+
+// Intersection Type
+type Circle = {
+  radius: number;
 };
 
-console.log(`user.id: ${user.id}`);
-// user.id = 3; // error
-// user.friends = []; // error
-user.friends.push('Phuong');
-console.log(`user.friends: ${user.friends}`);
+type Colorful = {
+  color: string;
+};
+
+type ColorfulCircle = Circle & Colorful;
+
+const happyFace: ColorfulCircle = {
+  radius: 4,
+  color: 'yellow',
+};
+
+type Cat = {
+  numLives: number;
+};
+
+type Dog = {
+  breed: string;
+};
+type CatDog = Cat & Dog & { age: number };
+
+const catDogType: CatDog = {
+  numLives: 3,
+  breed: 'fox',
+  age: 3,
+};
