@@ -128,13 +128,13 @@ type Cat = {
   numLives: number;
 };
 
-type Dog = {
-  breed: string;
-};
-type CatDog = Cat & Dog & { age: number };
+// type Dog = {
+//   breed: string;
+// };
+// type CatDog = Cat & Dog & { age: number };
 
-const catDogType: CatDog = {
-  numLives: 3,
-  breed: 'fox',
-  age: 3,
-};
+// const catDogType: CatDog = {
+//   numLives: 3,
+//   breed: 'fox',
+//   age: 3,
+// };

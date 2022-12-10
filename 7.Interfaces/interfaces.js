@@ -48,3 +48,11 @@ const shoesType = {
 };
 console.log(shoes.applyDiscount(0.1));
 console.log(shoesType.applyDiscount(0.2));
+const elton = {
+    name: 'elton',
+    age: 1,
+    breed: 'Husky',
+    bark() {
+        return 'Woff Woff!';
+    },
+};

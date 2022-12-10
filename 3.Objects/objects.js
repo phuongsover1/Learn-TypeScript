@@ -13,8 +13,12 @@ const happyFace = {
     radius: 4,
     color: 'yellow',
 };
-const catDogType = {
-    numLives: 3,
-    breed: 'fox',
-    age: 3,
-};
+// type Dog = {
+//   breed: string;
+// };
+// type CatDog = Cat & Dog & { age: number };
+// const catDogType: CatDog = {
+//   numLives: 3,
+//   breed: 'fox',
+//   age: 3,
+// };

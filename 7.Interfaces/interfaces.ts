@@ -86,3 +86,22 @@ const shoesType: ProductType = {
 
 console.log(shoes.applyDiscount(0.1));
 console.log(shoesType.applyDiscount(0.2));
+
+// Reopen Interface
+interface Dog {
+  name: string;
+  age: number;
+}
+
+interface Dog {
+  breed: string;
+  bark(): string;
+}
+const elton: Dog = {
+  name: 'elton',
+  age: 1,
+  breed: 'Husky',
+  bark() {
+    return 'Woff Woff!';
+  },
+};
