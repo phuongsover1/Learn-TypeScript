@@ -13,3 +13,11 @@ function isDelivered(status: OrderStatus): boolean {
 
 console.log(isDelivered(OrderStatus.DELIVERED));
 console.log(isDelivered(OrderStatus.SHIPPED));
+
+// A bit more about Enum
+enum ArrowKeys {
+  UP = 'up',
+  DOWN = 'down',
+  LEFT = 'left',
+  RIGHT = 'right',
+}
