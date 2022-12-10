@@ -30,3 +30,16 @@ points.push({ x: 2, y: 3 });
 // points.push({x:3}); // error
 // points.push({y:3}); // error
 console.log(points);
+
+//Multidimensional arrays
+const board: string[][] = [
+  ['x', 'o', 'x'],
+  ['o', 'x', 'o'],
+  ['x', 'o', 'x'],
+];
+
+const threeDimensionOfNum: number[][][] = [
+  [[1, 2]],
+  [[4]],
+  [[5, 6, 7]],
+];

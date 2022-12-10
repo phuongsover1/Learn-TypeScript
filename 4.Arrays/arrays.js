@@ -21,3 +21,14 @@ points.push({ x: 2, y: 3 });
 // points.push({x:3}); // error
 // points.push({y:3}); // error
 console.log(points);
+//Multidimensional arrays
+const board = [
+    ['x', 'o', 'x'],
+    ['o', 'x', 'o'],
+    ['x', 'o', 'x'],
+];
+const threeDimensionOfNum = [
+    [[1, 2]],
+    [[4]],
+    [[5, 6, 7]],
+];
