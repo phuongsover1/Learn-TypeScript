@@ -46,3 +46,23 @@ numberOrStrArray = ['sf', 'fdf'];
 const locations: (UnionPoint | UnionLocation)[] = [];
 locations.push({ lat: 3, long: 2 });
 locations.push({ x: 5, y: 6 });
+
+// Literal types
+let zero: 0 = 0;
+let hi: 'hi' = 'hi';
+// zero = 1; // error
+// hi = 'HI'; // error
+
+let mood: 'happy' | 'sad' = 'happy';
+mood = 'sad';
+// mood = 'sdff'; // error
+
+type DayOfWeek =
+  | 'Monday'
+  | 'Tuesday'
+  | 'Wednesday'
+  | 'Thursday'
+  | 'Friday'
+  | 'Saturday'
+  | 'Sunday';
+let day: DayOfWeek = 'Sunday';
