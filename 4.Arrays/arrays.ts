@@ -5,11 +5,11 @@ const emptyArr: [] = [];
 // emptyArr.push(123); // error
 
 const activeUsers: string[] = [];
-activeUsers.push('Phuong');
-activeUsers.push('Khang');
-activeUsers.push('Long');
+activeUsers.push("Phuong");
+activeUsers.push("Khang");
+activeUsers.push("Long");
 // activeUsers.push(123); //error
-activeUsers.push('Luu', 'Thing');
+activeUsers.push("Luu", "Thing");
 console.log(activeUsers);
 
 const ageList: number[] = [];
@@ -33,13 +33,9 @@ console.log(points);
 
 //Multidimensional arrays
 const board: string[][] = [
-  ['x', 'o', 'x'],
-  ['o', 'x', 'o'],
-  ['x', 'o', 'x'],
+  ["x", "o", "x"],
+  ["o", "x", "o"],
+  ["x", "o", "x"],
 ];
 
-const threeDimensionOfNum: number[][][] = [
-  [[1, 2]],
-  [[4]],
-  [[5, 6, 7]],
-];
+const threeDimensionOfNum: number[][][] = [[[1, 2]], [[4]], [[5, 6, 7]]];

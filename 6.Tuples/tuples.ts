@@ -1,9 +1,9 @@
 let myTuple: [number, string];
 // myTuple = [1, 'phuong', 'df']; the tuple has fixed-size
 // myTuple = ['phuong', 1]; // the type order is wrong
-myTuple = [1, 'phuong'];
+myTuple = [1, "phuong"];
 
-let numbers: [number, string, number] = [1, '2', 3];
+let numbers: [number, string, number] = [1, "2", 3];
 numbers.push(2);
 numbers.push(3);
 console.log(numbers);
@@ -12,5 +12,5 @@ numbers.pop();
 numbers.pop();
 numbers.pop();
 numbers.pop();
-numbers.push('dfs');
+numbers.push("dfs");
 console.log(numbers);

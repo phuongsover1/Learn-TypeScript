@@ -19,11 +19,11 @@ const colors = [];
 // Write a function called greet that accepts a single string OR an array of strings
 // It should print "Hello, <name>" for that single person OR greet each person in the array with the same format
 const greet = (name) => {
-    if (typeof name === 'string')
+    if (typeof name === "string")
         console.log(`Hello, ${name}`);
     else
         name.forEach((name) => console.log(`Hello, ${name}`));
 };
 console.log();
-greet('Phuong');
-greet(['Phuong', 'Long', 'Luu']);
+greet("Phuong");
+greet(["Phuong", "Long", "Luu"]);

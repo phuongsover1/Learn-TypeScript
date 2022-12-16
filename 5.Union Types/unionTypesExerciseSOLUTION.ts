@@ -17,7 +17,7 @@ let stuff: number[] | string[];
 // **********************************************
 // Create a literal type called SkillLevel
 // There are 4 allowed values: "Beginner", "Intermediate", "Advanced", and "Expert"
-type SkillLevel = 'Beginner' | 'Intermediate' | 'Advanced' | 'Expert';
+type SkillLevel = "Beginner" | "Intermediate" | "Advanced" | "Expert";
 
 // **********************************************
 // ******************* PART 4 *******************
@@ -30,7 +30,7 @@ type SkillLevel = 'Beginner' | 'Intermediate' | 'Advanced' | 'Expert';
 type SkiSchoolStudent = {
   name: string;
   age: number;
-  sport: 'ski' | 'snowboard';
+  sport: "ski" | "snowboard";
   level: SkillLevel;
 };
 
@@ -66,10 +66,10 @@ const colors: (RGB | HSL)[] = [];
 // Write a function called greet that accepts a single string OR an array of strings
 // It should print "Hello, <name>" for that single person OR greet each person in the array with the same format
 const greet = (name: string | string[]): void => {
-  if (typeof name === 'string') console.log(`Hello, ${name}`);
+  if (typeof name === "string") console.log(`Hello, ${name}`);
   else name.forEach((name) => console.log(`Hello, ${name}`));
 };
 console.log();
 
-greet('Phuong');
-greet(['Phuong', 'Long', 'Luu']);
+greet("Phuong");
+greet(["Phuong", "Long", "Luu"]);

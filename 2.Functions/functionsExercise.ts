@@ -8,12 +8,12 @@
 // twoFer() => "One for you, one for me"
 // twoFer("Elton") => "One for Elton, one for me"
 
-const twoFer = (name: string = 'you'): string => {
+const twoFer = (name: string = "you"): string => {
   return `one for ${name}, one for me`;
 };
 
 console.log(twoFer());
-console.log(twoFer('Elton'));
+console.log(twoFer("Elton"));
 
 // **********************************************
 // ******************* PART 2 *******************

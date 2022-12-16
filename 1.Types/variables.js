@@ -24,10 +24,10 @@
 // thing();
 // thing.toUpperCase();
 // Delayed Initialization & Implicit Any
-const movies = ['Arrival', 'The Thing', 'Aliens', 'Amadeus'];
+const movies = ["Arrival", "The Thing", "Aliens", "Amadeus"];
 let foundMovie; // foundMovie is 'any' type
 for (let movie in movies) {
-    if (movie === 'Amadeus') {
-        foundMovie = 'Amadeus';
+    if (movie === "Amadeus") {
+        foundMovie = "Amadeus";
     }
 }

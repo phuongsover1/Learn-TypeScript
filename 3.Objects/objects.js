@@ -11,7 +11,7 @@
 // };
 const happyFace = {
     radius: 4,
-    color: 'yellow',
+    color: "yellow",
 };
 // type Dog = {
 //   breed: string;

@@ -4,22 +4,22 @@ const loc = {
     y: 2,
 };
 const Nick = {
-    name: 'Nick',
+    name: "Nick",
     age: 18,
     sayHi() {
         console.log(`Hi, my name is ${this.name}`);
     },
 };
 const Phuong = {
-    name: 'Phuong',
+    name: "Phuong",
     age: 22,
-    nickname: 'Cuong',
+    nickname: "Cuong",
     sayHi() {
         console.log(`Hi, my name is ${this.name}`);
     },
 };
 const temp = {
-    name: 'Phuong',
+    name: "Phuong",
     say() {
         console.log(`Hi my name is ${this.name}`);
     },
@@ -29,7 +29,7 @@ Phuong.sayHi();
 temp.name;
 temp.say();
 const shoes = {
-    name: 'Blue Suede Shoes',
+    name: "Blue Suede Shoes",
     price: 100,
     applyDiscount(amount) {
         const newPrice = this.price * (1 - amount);
@@ -38,7 +38,7 @@ const shoes = {
     },
 };
 const shoesType = {
-    name: 'Blue Suede Shoes',
+    name: "Blue Suede Shoes",
     price: 100,
     applyDiscount(amount) {
         const newPrice = this.price * (1 - amount);
@@ -49,19 +49,26 @@ const shoesType = {
 console.log(shoes.applyDiscount(0.1));
 console.log(shoesType.applyDiscount(0.2));
 const elton = {
-    name: 'elton',
+    name: "elton",
     age: 1,
-    breed: 'Husky',
+    breed: "Husky",
     bark() {
-        return 'Woff Woff!';
+        return "Woff Woff!";
     },
 };
 const chewy = {
-    name: 'chewy',
+    name: "chewy",
     age: 2,
-    breed: 'Husky',
+    breed: "Husky",
     bark() {
-        return 'Woff Woff woff!';
+        return "Woff Woff woff!";
     },
-    job: 'guide dog',
+    job: "guide dog",
+};
+const phuong = {
+    name: "phuong",
+    id: 1,
+    email: "phuongsover2@gmail.com",
+    level: "fresher",
+    languages: ["Java", "JS"],
 };

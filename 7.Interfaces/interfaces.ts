@@ -19,7 +19,7 @@ interface Person {
 }
 
 const Nick: Person = {
-  name: 'Nick',
+  name: "Nick",
   age: 18,
   sayHi(): void {
     console.log(`Hi, my name is ${this.name}`);
@@ -27,9 +27,9 @@ const Nick: Person = {
 };
 
 const Phuong: Person = {
-  name: 'Phuong',
+  name: "Phuong",
   age: 22,
-  nickname: 'Cuong',
+  nickname: "Cuong",
   sayHi(): void {
     console.log(`Hi, my name is ${this.name}`);
   },
@@ -41,7 +41,7 @@ type Test = {
 };
 
 const temp: Test = {
-  name: 'Phuong',
+  name: "Phuong",
   say(): void {
     console.log(`Hi my name is ${this.name}`);
   },
@@ -65,7 +65,7 @@ type ProductType = {
 };
 
 const shoes: ProductInterface = {
-  name: 'Blue Suede Shoes',
+  name: "Blue Suede Shoes",
   price: 100,
   applyDiscount(amount: number) {
     const newPrice = this.price * (1 - amount);
@@ -75,7 +75,7 @@ const shoes: ProductInterface = {
 };
 
 const shoesType: ProductType = {
-  name: 'Blue Suede Shoes',
+  name: "Blue Suede Shoes",
   price: 100,
   applyDiscount(amount: number) {
     const newPrice = this.price * (1 - amount);
@@ -98,27 +98,27 @@ interface Dog {
   bark(): string;
 }
 const elton: Dog = {
-  name: 'elton',
+  name: "elton",
   age: 1,
-  breed: 'Husky',
+  breed: "Husky",
   bark() {
-    return 'Woff Woff!';
+    return "Woff Woff!";
   },
 };
 
 // Extending interfaces
 interface ServiceDog extends Dog {
-  job: 'guide dog' | 'drug sniffer' | 'bomb';
+  job: "guide dog" | "drug sniffer" | "bomb";
 }
 
 const chewy: ServiceDog = {
-  name: 'chewy',
+  name: "chewy",
   age: 2,
-  breed: 'Husky',
+  breed: "Husky",
   bark() {
-    return 'Woff Woff woff!';
+    return "Woff Woff woff!";
   },
-  job: 'guide dog',
+  job: "guide dog",
 };
 
 // Multiple inheritance interfaces.
@@ -137,9 +137,9 @@ interface Engineer extends Human, Employee {
 }
 
 const phuong: Engineer = {
-  name: 'phuong',
+  name: "phuong",
   id: 1,
-  email: 'phuongsover2@gmail.com',
-  level: 'fresher',
-  languages: ['Java', 'JS'],
+  email: "phuongsover2@gmail.com",
+  level: "fresher",
+  languages: ["Java", "JS"],
 };

@@ -7,11 +7,11 @@
 // If no name is provided, it should default to "you"
 // twoFer() => "One for you, one for me"
 // twoFer("Elton") => "One for Elton, one for me"
-const twoFer = (name = 'you') => {
+const twoFer = (name = "you") => {
     return `one for ${name}, one for me`;
 };
 console.log(twoFer());
-console.log(twoFer('Elton'));
+console.log(twoFer("Elton"));
 // **********************************************
 // ******************* PART 2 *******************
 // **********************************************

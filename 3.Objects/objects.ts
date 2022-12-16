@@ -121,7 +121,7 @@ type ColorfulCircle = Circle & Colorful;
 
 const happyFace: ColorfulCircle = {
   radius: 4,
-  color: 'yellow',
+  color: "yellow",
 };
 
 type Cat = {

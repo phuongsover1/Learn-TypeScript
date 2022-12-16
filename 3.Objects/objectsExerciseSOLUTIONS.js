@@ -1,8 +1,8 @@
 "use strict";
 const dune = {
-    title: 'Dune',
-    originalTitle: 'Dune Part One',
-    director: 'Denis Villeneuve',
+    title: "Dune",
+    originalTitle: "Dune Part One",
+    director: "Denis Villeneuve",
     releaseYear: 2021,
     boxOffice: {
         budget: 165000000,
@@ -11,8 +11,8 @@ const dune = {
     },
 };
 const cats = {
-    title: 'Cats',
-    director: 'Tom Hooper',
+    title: "Cats",
+    director: "Tom Hooper",
     releaseYear: 2019,
     boxOffice: {
         budget: 95000000,

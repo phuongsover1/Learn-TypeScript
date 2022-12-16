@@ -10,8 +10,8 @@ const ages: [] = [];
 // Create an array variable called gameBoard that starts as an empty array.
 // It should be typed to hold a 2 dimensional array of strings
 const gameBoard: string[][] = [];
-gameBoard.push(['x', 'o', 'x']);
-gameBoard.push(['x', 'o', 'x']);
+gameBoard.push(["x", "o", "x"]);
+gameBoard.push(["x", "o", "x"]);
 
 // **********************************************
 // ******************* PART 3 *******************
@@ -33,6 +33,6 @@ const getTotal = (products: Product[]): number =>
   products.reduce((sum, curProduct) => sum + curProduct.price, 0);
 
 const products: Product[] = [];
-products.push({ name: 'candy', price: 30.0 });
-products.push({ name: 'cookie', price: 50 });
+products.push({ name: "candy", price: 30.0 });
+products.push({ name: "cookie", price: 50 });
 console.log(`total: ${getTotal(products)}`);
