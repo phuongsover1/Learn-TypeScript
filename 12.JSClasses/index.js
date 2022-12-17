@@ -1,17 +1,29 @@
 'use strict';
 
 class Player {
-  score = 0;
-  numLives = 10;
+  #score = 0;
+  #numLives = 10;
   constructor(first, last) {
     this.first = first;
     this.last = last;
+    this.#secret();
   }
   taunt() {
     console.log('BOOYAH!');
   }
   loseLife() {
-    this.numLives -= 1;
+    this.#numLives -= 1;
+  }
+  get getScore() {
+    return this.#score;
+  }
+
+  updateScore(value) {
+    this.#score = value;
+  }
+
+  #secret() {
+    console.log('SECRET!');
   }
 }
 
