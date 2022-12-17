@@ -14,7 +14,7 @@ class Player {
   loseLife() {
     this.#numLives -= 1;
   }
-  get getScore() {
+  get score() {
     return this.#score;
   }
 
@@ -33,3 +33,4 @@ console.log(player1);
 
 const player2 = new Player('Khang', 'nguyen');
 console.log(player2);
+player1.score();
