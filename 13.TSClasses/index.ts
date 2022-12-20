@@ -36,3 +36,11 @@ class Player {
 const obj: Player = new Player("phuong", "nguyen", 12);
 console.log(obj.score);
 obj.score = -4545; // error
+
+class SuperPlayer extends Player {
+  public isAdmin: boolean = true;
+
+  maxScore() {
+    this._score = 999999;
+  }
+}
