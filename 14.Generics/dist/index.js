@@ -37,4 +37,5 @@ genericArrow([1, 2, 34, 4]);
 function merge(obj1, obj2) {
     return Object.assign(Object.assign({}, obj1), obj2);
 }
+console.log(merge({ name: "Phuong" }, { number: 9 }));
 console.log(merge({ name: "phuong" }, { pets: ["dog", "cat"] }));
