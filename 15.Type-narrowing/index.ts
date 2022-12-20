@@ -9,3 +9,11 @@ if (el) {
 } else {
   el;
 }
+
+// EQUALITY NARROWING
+function someFunc(x: string | number, y: string | boolean): void {
+  if (x === y) {
+    x.toUpperCase();
+    y.toUpperCase();
+  }
+}
