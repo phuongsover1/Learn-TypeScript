@@ -65,3 +65,24 @@ function printName(entity: User | Company) {
     entity;
   }
 }
+
+// Type Predicating
+interface Cat {
+  name: string;
+  numOfLives: number;
+}
+
+interface Dog {
+  name: string;
+  breed: string;
+}
+
+function isCat(animal: Cat | Dog): animal is Cat {
+  return (animal as Cat).numOfLives !== undefined;
+}
+
+function makeNoise(animal: Cat | Dog): string {
+  if (isCat(animal)) {
+    return "Meow";
+  } else return "Gau Gau";
+}
