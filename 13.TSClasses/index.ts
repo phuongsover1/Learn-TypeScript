@@ -8,7 +8,8 @@ class Player {
   constructor(
     private first: string,
     private last: string,
-    private _score: number
+
+    protected _score: number
   ) {}
 
   get getFirst() {
@@ -44,3 +45,24 @@ class SuperPlayer extends Player {
     this._score = 999999;
   }
 }
+
+interface Colorful {
+  color: string;
+}
+
+interface Printable {
+  print(): void;
+}
+
+class Bike implements Colorful {
+  constructor(public color: string) {}
+}
+
+class Jacket implements Colorful, Printable {
+  constructor(public brand: string, public color: string) {}
+  print(): void {
+    console.log(`${this.brand} ${this.color} jacket`);
+  }
+}
+
+const jacket1 = new Jacket("Gucci", "red");
