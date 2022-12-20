@@ -45,3 +45,11 @@ function getRandomElement<T>(list: T[]): T {
 console.log(getRandomElement<string>(["a", "b", "c"]));
 console.log(getRandomElement<number>([1, 4, 2, 5]));
 console.log(getRandomElement<boolean>([true, false]));
+
+// using arrow function
+const genericArrow = <T>(list: T[]): T => {
+  const randomIndex = Math.floor(Math.random() * list.length);
+  return list[randomIndex];
+};
+
+genericArrow<number>([1, 2, 34, 4]);

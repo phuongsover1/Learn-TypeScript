@@ -29,3 +29,8 @@ function getRandomElement(list) {
 console.log(getRandomElement(["a", "b", "c"]));
 console.log(getRandomElement([1, 4, 2, 5]));
 console.log(getRandomElement([true, false]));
+const genericArrow = (list) => {
+    const randomIndex = Math.floor(Math.random() * list.length);
+    return list[randomIndex];
+};
+genericArrow([1, 2, 34, 4]);
