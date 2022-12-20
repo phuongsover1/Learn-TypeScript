@@ -53,3 +53,13 @@ const genericArrow = <T>(list: T[]): T => {
 };
 
 genericArrow<number>([1, 2, 34, 4]);
+
+// Generics with multiple types
+function merge<T, U>(obj1: T, obj2: U) {
+  return {
+    ...obj1,
+    ...obj2,
+  };
+}
+
+console.log(merge({ name: "phuong" }, { pets: ["dog", "cat"] }));
