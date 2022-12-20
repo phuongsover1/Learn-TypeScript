@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 class Player {
   #score = 0;
@@ -9,7 +9,7 @@ class Player {
     this.#secret();
   }
   taunt() {
-    console.log('BOOYAH!');
+    console.log("BOOYAH!");
   }
   loseLife() {
     this.#numLives -= 1;
@@ -23,14 +23,14 @@ class Player {
   }
 
   #secret() {
-    console.log('SECRET!');
+    console.log("SECRET!");
   }
 }
 
-const player1 = new Player('phuong', 'nguyen');
+const player1 = new Player("phuong", "nguyen");
 player1.taunt();
 console.log(player1);
 
-const player2 = new Player('Khang', 'nguyen');
+const player2 = new Player("Khang", "nguyen");
 console.log(player2);
 player1.score();
