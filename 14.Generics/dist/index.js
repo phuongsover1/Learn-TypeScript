@@ -42,3 +42,9 @@ console.log(merge({ name: "phuong" }, { pets: ["dog", "cat"] }));
 function printDoubleLength(thing) {
     return thing.length * 2;
 }
+function makeEmptyArray() {
+    return [];
+}
+const strings = makeEmptyArray();
+const numbers = makeEmptyArray();
+const bools = makeEmptyArray();

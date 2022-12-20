@@ -73,3 +73,12 @@ interface Lengthy {
 function printDoubleLength<T extends Lengthy>(thing: T): number {
   return thing.length * 2;
 }
+
+//
+function makeEmptyArray<T = number>(): T[] {
+  return [];
+}
+
+const strings = makeEmptyArray<string>();
+const numbers = makeEmptyArray();
+const bools = makeEmptyArray<boolean>();
