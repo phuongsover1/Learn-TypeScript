@@ -21,5 +21,11 @@ function identity(item) {
     return item;
 }
 const number = identity(3);
-const test = identity(true);
 const string = identity("fjdkf");
+function getRandomElement(list) {
+    const randomIndex = Math.floor(Math.random() * list.length);
+    return list[randomIndex];
+}
+console.log(getRandomElement(["a", "b", "c"]));
+console.log(getRandomElement([1, 4, 2, 5]));
+console.log(getRandomElement([true, false]));

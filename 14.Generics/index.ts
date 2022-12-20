@@ -32,5 +32,16 @@ function identity<Type>(item: Type): Type {
 
 const number = identity<number>(3);
 
-const test = identity<string>(true); // error
+// const test = identity<string>(true); // error
 const string = identity<string>("fjdkf");
+
+// another example
+
+function getRandomElement<T>(list: T[]): T {
+  const randomIndex = Math.floor(Math.random() * list.length);
+  return list[randomIndex];
+}
+
+console.log(getRandomElement<string>(["a", "b", "c"]));
+console.log(getRandomElement<number>([1, 4, 2, 5]));
+console.log(getRandomElement<boolean>([true, false]));
