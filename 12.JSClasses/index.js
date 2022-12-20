@@ -1,6 +1,11 @@
 "use strict";
 
 class Player {
+  static description = "Player In Our Game";
+  static randomPlayer() {
+    return new Player("unknown", "unknown");
+  }
+
   #score = 0;
   #numLives = 10;
   constructor(first, last) {
@@ -52,6 +57,8 @@ console.log(`fullName: ${player1.fullName}`);
 player1.fullName = "John Doe";
 
 console.log(`fullName: ${player1.fullName}`);
+
+console.log(`Static variable: ${Player.description}`);
 
 //const player2 = new Player("Khang", "nguyen");
 //console.log(player2);
