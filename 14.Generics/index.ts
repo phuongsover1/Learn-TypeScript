@@ -65,3 +65,11 @@ function merge<T extends object, U extends object>(obj1: T, obj2: U) {
 console.log(merge({ name: "Phuong" }, { number: 9 }));
 
 console.log(merge({ name: "phuong" }, { pets: ["dog", "cat"] }));
+
+interface Lengthy {
+  length: number;
+}
+
+function printDoubleLength<T extends Lengthy>(thing: T): number {
+  return thing.length * 2;
+}

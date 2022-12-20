@@ -39,3 +39,6 @@ function merge(obj1, obj2) {
 }
 console.log(merge({ name: "Phuong" }, { number: 9 }));
 console.log(merge({ name: "phuong" }, { pets: ["dog", "cat"] }));
+function printDoubleLength(thing) {
+    return thing.length * 2;
+}
