@@ -82,3 +82,25 @@ function makeEmptyArray<T = number>(): T[] {
 const strings = makeEmptyArray<string>();
 const numbers = makeEmptyArray();
 const bools = makeEmptyArray<boolean>();
+
+// Generic classes
+interface Song {
+  title: string;
+  artist: string;
+}
+
+interface Video {
+  title: string;
+  creator: string;
+  resolution: string;
+}
+
+class Playlist<T> {
+  public queue: T[] = [];
+  add(el: T): void {
+    this.queue.push(el);
+  }
+}
+
+const songs = new Playlist<Song>();
+const videos = new Playlist<Video>();

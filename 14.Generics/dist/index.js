@@ -48,3 +48,13 @@ function makeEmptyArray() {
 const strings = makeEmptyArray();
 const numbers = makeEmptyArray();
 const bools = makeEmptyArray();
+class Playlist {
+    constructor() {
+        this.queue = [];
+    }
+    add(el) {
+        this.queue.push(el);
+    }
+}
+const songs = new Playlist();
+const videos = new Playlist();
