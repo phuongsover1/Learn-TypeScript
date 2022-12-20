@@ -14,8 +14,24 @@ class Player {
   loseLife() {
     this.#numLives -= 1;
   }
+  get fullName() {
+    return `${this.first} ${this.last}`;
+  }
+
+  set fullName(newName) {
+    const [first, last] = newName.split(" ");
+    this.first = first;
+    this.last = last;
+  }
   get score() {
     return this.#score;
+  }
+
+  set score(newScore) {
+    if (newScore < 0) {
+      throw new Error("Score must be positive");
+    }
+    this.#score = newScore;
   }
 
   updateScore(value) {
@@ -29,8 +45,14 @@ class Player {
 
 const player1 = new Player("phuong", "nguyen");
 player1.taunt();
+player1.score = 483948394;
 console.log(player1);
+console.log(`fullName: ${player1.fullName}`);
 
-const player2 = new Player("Khang", "nguyen");
-console.log(player2);
-player1.score();
+player1.fullName = "John Doe";
+
+console.log(`fullName: ${player1.fullName}`);
+
+//const player2 = new Player("Khang", "nguyen");
+//console.log(player2);
+//player1.score();
