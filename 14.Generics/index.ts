@@ -127,7 +127,14 @@ interface Pig {
   kind: "pig";
 }
 
-type AnimalGarden = Rooster | Cow | Pig;
+interface Sheep {
+  name: string;
+  weight: number;
+  age: number;
+  kind: "sheep";
+}
+
+type AnimalGarden = Rooster | Cow | Pig | Sheep;
 function getFarmAnimationSound(animal: AnimalGarden) {
   switch (animal.kind) {
     case "rooster":
@@ -139,6 +146,12 @@ function getFarmAnimationSound(animal: AnimalGarden) {
     case "pig":
       animal;
       break;
+    case "sheep":
+      animal;
+      break;
+    default:
+      // We should never make it here, if we handled all cases correctly
+      const shouldNeverGerHere: never = animal;
   }
 }
 
