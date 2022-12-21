@@ -104,3 +104,47 @@ class Playlist<T> {
 
 const songs = new Playlist<Song>();
 const videos = new Playlist<Video>();
+
+// Discriminated Unions
+interface Rooster {
+  name: string;
+  weight: number;
+  age: number;
+  kind: "rooster";
+}
+
+interface Cow {
+  name: string;
+  weight: number;
+  age: number;
+  kind: "cow";
+}
+
+interface Pig {
+  name: string;
+  weight: number;
+  age: number;
+  kind: "pig";
+}
+
+type AnimalGarden = Rooster | Cow | Pig;
+function getFarmAnimationSound(animal: AnimalGarden) {
+  switch (animal.kind) {
+    case "rooster":
+      animal;
+      break;
+    case "cow":
+      animal;
+      break;
+    case "pig":
+      animal;
+      break;
+  }
+}
+
+const cow1: Cow = {
+  name: "cowsheep",
+  weight: 58,
+  age: 13,
+  kind: "cow",
+};
