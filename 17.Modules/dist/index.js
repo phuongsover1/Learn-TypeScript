@@ -32,3 +32,8 @@ const x = 3;
 const obj = new user_1.default("khang", "phuongsover2@gmail.com");
 obj.logout();
 (0, user_1.UserHelper)();
+const abc = {
+    name: "Phuong",
+    age: 22,
+};
+const cat = "Cat";
